@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import { 
   SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
   SiTailwindcss, SiGit, SiAmazon, SiNodedotjs, SiNestjs, SiPostgresql, 
@@ -11,16 +12,53 @@ import {
 
 const About = () => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null)
+  
+  // Create refs and animation controls for each section
+  const [headerRef, headerInView] = useInView({ triggerOnce: true, threshold: 0.1 })
+  const headerAnimation = useAnimation()
+  
+  const [storyRef, storyInView] = useInView({ triggerOnce: true, threshold: 0.1 })
+  const storyAnimation = useAnimation()
+  
+  const [statsRef, statsInView] = useInView({ triggerOnce: true, threshold: 0.1 })
+  const statsAnimation = useAnimation()
+  
+  const [techRef, techInView] = useInView({ triggerOnce: true, threshold: 0.1 })
+  const techAnimation = useAnimation()
+
+  // Trigger animations when sections come into view
+  useEffect(() => {
+    if (headerInView) {
+      headerAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.6 } })
+    }
+  }, [headerInView, headerAnimation])
+
+  useEffect(() => {
+    if (storyInView) {
+      storyAnimation.start({ opacity: 1, x: 0, transition: { duration: 0.6 } })
+    }
+  }, [storyInView, storyAnimation])
+
+  useEffect(() => {
+    if (statsInView) {
+      statsAnimation.start({ opacity: 1, x: 0, transition: { duration: 0.6 } })
+    }
+  }, [statsInView, statsAnimation])
+
+  useEffect(() => {
+    if (techInView) {
+      techAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.6 } })
+    }
+  }, [techInView, techAnimation])
 
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="container-custom px-4">
         {/* Section Header */}
         <motion.div
+          ref={headerRef}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={headerAnimation}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6">
@@ -36,10 +74,9 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
           {/* About Text */}
           <motion.div
+            ref={storyRef}
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            animate={storyAnimation}
             className="space-y-6"
           >
             <div className="glass-effect rounded-3xl p-8 shadow-xl" style={{boxShadow: '0 -10px 25px -5px rgba(0, 0, 0, 0.1), 0 25px 50px -12px rgba(0, 0, 0, 0.25)'}}>
@@ -68,10 +105,9 @@ const About = () => {
 
           {/* Stats */}
           <motion.div
+            ref={statsRef}
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            animate={statsAnimation}
             className="space-y-6"
           >
             <div className="glass-effect rounded-3xl p-8 shadow-xl" style={{boxShadow: '0 -10px 25px -5px rgba(0, 0, 0, 0.1), 0 25px 50px -12px rgba(0, 0, 0, 0.25)'}}>
@@ -88,9 +124,7 @@ const About = () => {
                   <motion.div
                     key={stat.label}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    animate={statsInView ? { opacity: 1, scale: 1, transition: { duration: 0.5, delay: index * 0.1 } } : {}}
                     className="text-center"
                   >
                     <div className="text-3xl md:text-4xl font-bold gradient-text">
@@ -108,10 +142,9 @@ const About = () => {
 
         {/* Technologies Section */}
         <motion.div
+          ref={techRef}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          animate={techAnimation}
           className="mb-16"
         >
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
@@ -142,9 +175,7 @@ const About = () => {
               <motion.div
                 key={tech.name}
                 initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.02 }}
+                animate={techInView ? { opacity: 1, scale: 1, transition: { duration: 0.3, delay: index * 0.02 } } : {}}
                 whileHover={{ scale: 1.3 }}
                 className="group flex flex-col items-center relative"
                 onMouseEnter={() => setHoveredTech(tech.name)}
