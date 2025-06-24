@@ -83,7 +83,7 @@ const About = () => {
                   { label: 'Years Experience', value: '3.5+' },
                   { label: 'Projects Completed', value: '30+' },
                   { label: 'Technologies Used', value: '15+' },
-                  { label: 'Happy Clients', value: '7+' },
+                  { label: 'Happy Clients', value: '10+' },
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}
