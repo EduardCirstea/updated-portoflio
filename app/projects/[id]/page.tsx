@@ -185,7 +185,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                       transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                       className="flex items-center space-x-3 p-3 rounded-xl hover:bg-white/50 transition-colors"
                     >
-                      <div className="w-2 h-2 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-primary-700 rounded-full flex-shrink-0"></div>
                       <span className="text-primary-700 font-medium">{feature}</span>
                     </motion.div>
                   ))}

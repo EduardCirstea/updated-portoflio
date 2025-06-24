@@ -25,7 +25,7 @@
       "Multi-location disease distribution monitoring",
       "JWT-secured API with comprehensive data validation"
     ],
-    "image": "/images/disease7.png",
+    "image": "/images/disease0.jpeg",
     "photos": ["/images/disease1.png", "/images/disease2.png", "/images/disease3.png", "/images/disease4.png", "/images/disease5.png", "/images/disease6.png", "/images/disease7.png", "/images/disease8.png", "/images/disease9.png", "/images/disease10.png", "/images/disease11.png"],
     "github": "https://github.com/EduardCirstea/disease-tracker",
     "demo": "https://youtu.be/ln5EPFspVxE",
@@ -38,7 +38,7 @@
     "title": "SpeedTest Pro - Internet Speed Testing Platform",
     "description": "A modern full-stack speed test application that measures internet performance with real-time testing, user authentication, interactive maps, and comprehensive analytics dashboard.",
     "longDescription": "SpeedTest Pro is a sophisticated web application built for comprehensive internet speed testing and performance monitoring. The project implements a robust client-server architecture with an interactive React/TypeScript frontend and a scalable Node.js backend.\n\nIt utilizes advanced speed measurement algorithms based on Cloudflare's API to deliver precise results for download, upload, latency, and jitter metrics. The application features a complete authentication system with JWT tokens, MongoDB data persistence, and geolocation capabilities for displaying results on an interactive map of Romania.\n\nThe user interface is modern and intuitive, featuring futuristic visual elements, interactive charts, and an optimized UX for all device types. This project demonstrates advanced full-stack development skills, Redux state management, external API integration, and implementation of complex networking and data visualization functionalities.",
-    "image": "/images/speedtest3.png",
+    "image": "/images/speedtest0.jpeg",
     "photos": ["/images/speedtest1.png", "/images/speedtest2.png", "/images/speedtest3.png", "/images/speedtest4.png", "/images/speedtest5.png"],
     "features": [
         "Real-time internet speed testing with download/upload measurements",
@@ -102,7 +102,7 @@
       "RESTful API design with protected routes and middleware",
       "Optimized state management using Redux for seamless data flow"
     ],
-    "image": "/images/socialmedia1.png",
+    "image": "/images/socialmedia0.jpeg",
     "photos": ["/images/socialmedia1.png", "/images/socialmedia2.png", "/images/socialmedia3.png", "/images/socialmedia4.png", "/images/socialmedia5.png"],
     "github": "https://github.com/EduardCirstea/Fullstack-SocialMediaApp",
     "demo": "https://www.youtube.com/watch?v=F6HTUQzfPFA&feature=youtu.be",
@@ -135,7 +135,7 @@
       "JWT-based secure authentication",
       "Responsive modern UI with pagination"
     ],
-    "image": "/images/invoice1.png",
+    "image": "/images/invoice0.jpeg",
     "photos": ["/images/invoice1.png", "/images/invoice2.png", "/images/invoice3.png", "/images/invoice4.png", "/images/invoice5.png", "/images/invoice6.png", "/images/invoice7.png"],
     "github": "https://github.com/EduardCirstea/App-facturare/",
     "demo": "https://www.youtube.com/watch?v=EtM1kLm7MTM",
@@ -168,7 +168,7 @@
         "Admin dashboard for product and banner management",
         "Toast notifications and loading states for enhanced user experience"
     ],
-    "image": "/images/ecommerce1.png",
+    "image": "/images/ecommerce0.jpeg",
     "photos": ["/images/ecommerce1.png", "/images/ecommerce2.png", "/images/ecommerce3.png", "/images/ecommerce4.png"],
     "github": "https://github.com/EduardCirstea/Ecommerce_nextjs",
     "demo": "https://www.youtube.com/watch?v=WHAbMjBfA-c",
@@ -202,7 +202,7 @@
           "Blog CMS with Categories and Comment System",
           "Promotional Campaigns and Gift Product Management"
       ],
-      "image": "/images/pharma2.png",
+      "image": "/images/pharma0.jpeg",
       "photos": ["/images/pharma1.png", "/images/pharma2.png"],
       "github": "",
       "demo": "https://pharmaplus-online.ro/",
@@ -236,7 +236,7 @@
           "Transaction monitoring with search and export functionality",
           "Dark/Light theme switching with responsive design for all devices"
       ],
-      "image": "/images/ecomvision1.png",
+      "image": "/images/ecomvision0.jpeg",
       "photos": ["/images/ecomvision1.png", "/images/ecomvision2.png", "/images/ecomvision3.png", "/images/ecomvision4.png", "/images/ecomvision5.png", "/images/ecomvision6.png", "/images/ecomvision7.png"],
       "github": "https://github.com/EduardCirstea/Admin-dashboard",
       "demo": "https://www.youtube.com/watch?v=MDAsS329pFI",
@@ -269,8 +269,8 @@
           "Fleet and equipment management with user assignment tracking",
           "Integrated CRM with client management, contracts, and subcontractor coordination"
       ],
-      "image": "/images/vcrm1.png",
-      "photos": ["/images/vcrm1.png"],
+      "image": "/images/vcrm0.jpeg",
+      "photos": ["/images/vcrm0.png","/images/vcrm1.png"],
       "github": "",
       "demo": "https://vcrm.systemiotech.com/",
       "category": "Backend",
@@ -303,7 +303,7 @@
     "Audio notifications and visual feedback system",
     "Advanced data processing for location and equipment categorization"
     ],  
-      "image": "/images/boltextension1.png",
+      "image": "/images/boltextension0.jpeg",
       "photos": ["/images/boltextension1.png", "/images/boltextension2.png", "/images/boltextension3.png"],
       "github": "",
       "demo": "https://youtu.be/De-_sPz_08o",
@@ -336,7 +336,7 @@
           "Email verification and password reset workflows",
           "SEO optimization with dynamic meta tags and sitemap generation"
       ],
-      "image": "/images/boltweb1.png",
+      "image": "/images/boltweb0.jpeg",
       "photos": ["/images/boltweb1.png", "/images/boltweb2.png", "/images/boltweb3.png", "/images/boltweb4.png", "/images/boltweb5.png", "/images/boltweb6.png"],
       "github": "",
       "demo": "https://boltrelay.systemiotech.com/",

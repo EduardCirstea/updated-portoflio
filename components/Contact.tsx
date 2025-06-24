@@ -105,7 +105,7 @@ const Contact = () => {
             Let's Talk
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-primary-600 max-w-3xl mx-auto px-4">
-          Have a project idea or looking for a passionate developer to join your team?I'd be delighted to hear from you.
+          Have a project idea or looking for a passionate developer to join your team? I'd be delighted to hear from you.
            Whether you're hiring or seeking a collaborator, let's connect and build something amazing together!
           </p>
         </motion.div>
